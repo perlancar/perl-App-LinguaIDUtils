@@ -16,7 +16,7 @@ $SPEC{num_to_word} = {
     summary => 'Convert number (123) to word ("seratus dua puluh tiga")',
     'x.no_index' => 1,
     args => {
-        %nums_arg,
+        %arg_nums,
     },
     result_naked => 1,
 };
@@ -25,7 +25,7 @@ sub num_to_word {
 
     my %args = @_;
 
-    [map {lc(Lingua::ID::Nums2Words::nums2words($_))} @{ $args{nums} }];
+    [map {Lingua::ID::Nums2Words::nums2words($_)} @{ $args{nums} }];
 }
 
 $SPEC{word_to_num} = {
@@ -33,7 +33,7 @@ $SPEC{word_to_num} = {
     summary => 'Convert word ("seratus dua puluh tiga") to number (123)',
     'x.no_index' => 1,
     args => {
-        %words_arg,
+        %arg_words,
     },
     result_naked => 1,
 };
