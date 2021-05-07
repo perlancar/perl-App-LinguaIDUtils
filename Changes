@@ -1,3 +1,9 @@
+0.030   2021-05-07  Released-By: PERLANCAR; Urgency: medium; Backward-Incompatible: yes
+
+	- [incompatible change] Rename CLIs id-w2n -> ind-w2n, id-n2w ->
+	  ind-n2w.
+
+
 0.02    2016-01-18  Released-By: PERLANCAR
 
         - No functional changes.
